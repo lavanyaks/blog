@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Travelogues</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div>
+        <h1><a href="">Travelogues</a></h1>
+    </div>
+
+    <div class="content container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

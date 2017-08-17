@@ -1,0 +1,19 @@
+// Usage: @include box-shadow(0px, 0px, 10px, 2px, $dark-grey, false);
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $size $color;
+        -moz-box-shadow:inset $top $left $blur $size $color;
+        box-shadow:inset $top $left $blur $size $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+
+// Usage: @include transition(all, 0.5s, ease-in-out, 0s);
+@mixin transition($property, $duration, $timingfunction, $delay) {
+    -webkit-transition: $property $duration $timingfunction $delay;
+    -moz-transition: $property $duration $timingfunction $delay;
+    transition: $property $duration $timingfunction $delay;
+}

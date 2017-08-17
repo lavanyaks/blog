@@ -1,18 +1,13 @@
-<html>
-    <head>
-        <title>Sunny Wanderer's blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="">The Sunny Wanderer</a></h1>
-        </div>
+{% extends 'blog/base.html' %}
 
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
+{% block content %}
+
+{% for post in posts %}
+<div>
+    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+    <p>published: {{ post.published_date }}</p>
+    <p>{{ post.text|linebreaks }}</p>
+</div>
+{% endfor %}
+
+{% endblock content %}

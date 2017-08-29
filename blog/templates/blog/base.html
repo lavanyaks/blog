@@ -2,18 +2,28 @@
 
 <html>
 <head>
-    <title>Travelogues</title>
+    <title>MyTravelogues</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="//use.fontawesome.com/0965ea4c7d.js"></script>
 </head>
 <body>
-    <div>
-        <h1><a href="">Travelogues</a></h1>
-    </div>
+    <header>
+        <h1 class="logo"><a href="/">MyTravelogues</a></h1>
+    </header>
 
-    <div class="content container">
+    <main>
         {% block content %}
         {% endblock %}
-    </div>
+    </main>
+
+    <footer>
+        <p>Stay in Touch</p>
+        <div class="social-media">
+            <a href="//www.twitter.com/lavanyaksingh" class="twitter-icon"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+            <a href="//www.instagram.com/lavanyaks" class="instagram-icon"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+            <a href="//www.github.com/lavanyaks" class="github-icon"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

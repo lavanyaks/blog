@@ -1,22 +1,35 @@
 * {
+    box-sizing: border-box;
     font-family: inherit;
     line-height: inherit;
     color: inherit;
 }
 
+header, footer {
+    background-color: $background;
+    padding: 10px;
+}
+
 body {
-    @include box-shadow(0px, 0px, 10px, 2px, $dark-grey, false);
-    border: 1px solid $light-grey;
-    box-sizing: border-box;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1240px;
-    padding: 20px;
+    margin: 0;
     width: 100%;
+}
+
+main {
+    max-width: 640px;
+    margin: 75px auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 div {
     display: block;
+}
+
+img {
+    max-width: 100%;
 }
 
 button, input {

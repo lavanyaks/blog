@@ -4,12 +4,33 @@
 <head>
     <title>MyTravelogues</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <script src="//use.fontawesome.com/0965ea4c7d.js"></script>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="/">MyTravelogues</a></h1>
+        <h2 class="logo"><a href="/">Lava</a></h2>
+        <nav>
+            <ul class="social-media">
+                <li><a href="//www.twitter.com/lavanyaksingh" class="twitter-icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="//www.instagram.com/lavanyaks" class="instagram-icon" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="//www.github.com/lavanyaks" class="github-icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="nav-items">
+                <li class="has-submenu">
+                    <a href="/">Portfolio</a>
+                    <ul class="sub-menu">
+                        <li><a href="/montreal/">Montreal</a></li>
+                        <li><a href="/toronto/">Toronto</a></li>
+                    </ul>
+                </li>
+                <li><a href="">About Me</a></li>
+                <li><a href="/blog/">Journal</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -18,12 +39,13 @@
     </main>
 
     <footer>
-        <p>Stay in Touch</p>
-        <div class="social-media">
-            <a href="//www.twitter.com/lavanyaksingh" class="twitter-icon"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
-            <a href="//www.instagram.com/lavanyaks" class="instagram-icon"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
-            <a href="//www.github.com/lavanyaks" class="github-icon"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+        <div class="email-address">
+            <a href="mailto:lava@me.com">lava@me.com</a>
         </div>
+        <div class="copyright">
+            <a><i class="fa fa-copyright" aria-hidden="true"></i> Lava</a>
+        </div>
+
     </footer>
 </body>
 </html>

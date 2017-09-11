@@ -1,11 +1,75 @@
 header {
-    color: $text-light;
-    position: fixed;
-    top: 0;
+    color: $text-dark;
     width: 100%;
 
-    h1 {
-        max-width: 640px;
-        margin: 0 auto;
+    h2 {
+        float: left;
+        max-width: 50%;
+
+        a {
+            margin: 10.5px 0;
+        }
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    nav {
+        float: right;
+        min-width: 50%;
+
+        ul {
+            display: inline-block;
+            float: right;
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+
+        .nav-items {
+
+            li {
+                margin-right: 35px;
+            }
+
+            a {
+                font-size: 14px;
+                letter-spacing: 0.75px;
+            }
+        }
+
+        .sub-menu {
+            display: none;
+        }
+
+        .has-submenu:hover {
+            .sub-menu {
+                display: block;
+                padding: 0;
+                position: absolute;
+
+                li {
+                    font-size: 14px;
+                    float: none;
+                    padding: 10px 10px 0px 0;
+                }
+            }
+        }
+
+        .social-media {
+            color: $icons;
+
+            li {
+                margin-right: 25px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
     }
 }

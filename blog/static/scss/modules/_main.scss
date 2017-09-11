@@ -5,23 +5,30 @@
     color: inherit;
 }
 
-header, footer {
+html {
     background-color: $background;
-    padding: 10px;
 }
 
 body {
-    margin: 0;
+    background-color: $main-background;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 960px;
     width: 100%;
 }
 
+header, main, footer {
+    display: inline-block;
+}
+
 main {
-    max-width: 640px;
-    margin: 75px auto;
+    margin: 40px 0 0;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 div {
@@ -29,10 +36,11 @@ div {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
-button, input {
+button, input, textarea {
+    border: 1px solid $border;
     border-radius: 3px;
     font-size: 16px;
     padding: 15px 10px;
@@ -42,6 +50,7 @@ button {
     background-color: $button-bg;
     border: 1px solid $button-bg;
     color: $text-light;
+    transition: all 0.4s ease-in-out;
     width: auto;
 }
 
@@ -51,9 +60,5 @@ button:hover {
 }
 
 button:focus, button:active, input:focus {
-    outline: none;
-}
-
-input {
-    border-style: groove;
+    // outline: none;
 }

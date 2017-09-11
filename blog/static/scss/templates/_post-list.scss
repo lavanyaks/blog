@@ -1,6 +1,7 @@
 .post-list {
     img {
-
+        height: 280px;
+        margin-bottom: 20px;
     }
 
     p:last-child {
@@ -8,11 +9,58 @@
     }
 
     .post {
-        padding: 20px;
+        float: left;
+        min-height: 500px;
+        width: 49%;
+    }
+
+    .post:nth-of-type(2n) {
+        margin-left: 2%;
     }
 
     .post:hover {
-        @include box-shadow(0px, 0px, 10px, 2px, $dark-grey, false);
+        // @include box-shadow(0px, 0px, 10px, 2px, $dark-grey, false);
         transition: all 0.4s ease-in-out;
+    }
+
+    .post-title {
+        color: $text-dark;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .post-excerpt + p {
+        color: $text-grey;
+    }
+
+    .post-date {
+        color: $text-dark;
+        font-style:italic;
+    }
+
+    .pagination {
+        display: inline-block;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+
+        li, i {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        .active {
+            background-color: $page-active-bg;
+            color: $page-active;
+        }
+
+        .inactive {
+            color: $border;
+        }
     }
 }

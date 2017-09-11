@@ -1,16 +1,32 @@
 $black: #000000;
 $white: #ffffff;
-$dark-grey: #a8a8a8;
-$light-grey: #efefef;
+
+// COLOUR PALETTE
+$slate-white: #f3f3f3;
+$brownish-grey: #a5a6aa;
+$dark-grey: #25282e;
+$light-grey: #d5d0d9;
+$greyish-green: #4f5d60;
+$greenish-grey: #7d8d8f;
+$brown-grey: #999999;
+
+// MAIN
+$background: $slate-white;
+$border: #dddeee;
 
 // HEADER & FOOTER
-$background: $black;
-$icons: $white;
+$main-background: $white;
+$icons: $brown-grey;
 
 // TEXT COLOUR
-$text-dark: $black;
+$text-dark: $dark-grey;
+$text-grey: $greyish-green;
 $text-light: $white;
 
 // ELEMENTS COLORS
-$button-bg: $black;
+$button-bg: $dark-grey;
 $button-hover-bg: $white;
+
+// PAGINATION
+$page-active-bg: $dark-grey;
+$page-active: $slate-white;

@@ -1,5 +1,10 @@
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
 h1 {
-    // font-size:
+    color: $text-dark;
 }
 h2 {
 
@@ -17,5 +22,10 @@ h6 {
 
 }
 p {
-    line-height: 1.5;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.75;
+}
+
+button, .sub-menu, .pagination li, .social-share {
+    font-family: 'Montserrat', sans-serif;
 }

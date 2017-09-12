@@ -2,45 +2,47 @@
 
 {% block content %}
 <div class="post-detail">
-    <div class="post-info">
-        <h1>{{ post.title }}</h1>
-        {% if post.published_date %}
-        <div class="date">
-            {{ post.published_date }}
+    <div class="post">
+        <div class="post-info">
+            <h1>{{ post.title }}</h1>
+            {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        </div>
+
+        {% endif %}
+        {% if post.image %}
+        <img src='{{ post.image.url }}' />
+        {% endif %}
+        <p>{{ post.text|linebreaksbr }}</p>
+
+        <div class="social-share">
+            <span>Share:</span>
+            <!-- Email -->
+            <a href="mailto:?Subject=Travel Blog&amp;Body=Check%20this%20out%20 https://mytravelogues.ca" class="share-link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="http://www.facebook.com/sharer.php?u=https://lavanyaks.pythonanywhere.com" target="_blank" class="share-link">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/share?url=https://lavanyaks.pythonanywhere.com&amp;text=Travel%20Blog&amp;hashtags=travelblog" target="_blank" class="share-link">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+
+            <!-- Google+ -->
+            <a href="https://plus.google.com/share?url=https://lavanyaks.pythonanywhere.com" target="_blank" class="share-link">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
-
-    {% endif %}
-    {% if post.image %}
-    <img src='{{ post.image.url }}' />
-    {% endif %}
-    <p>{{ post.text|linebreaksbr }}</p>
-
-    <div class="social-share">
-        <span>Share:</span>
-        <!-- Email -->
-        <a href="mailto:?Subject=Travel Blog&amp;Body=Check%20this%20out%20 https://mytravelogues.ca" class="share-link">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-
-        <!-- Facebook -->
-        <a href="http://www.facebook.com/sharer.php?u=https://lavanyaks.pythonanywhere.com" target="_blank" class="share-link">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-
-        <!-- Twitter -->
-        <a href="https://twitter.com/share?url=https://lavanyaks.pythonanywhere.com&amp;text=Travel%20Blog&amp;hashtags=travelblog" target="_blank" class="share-link">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-
-        <!-- Google+ -->
-        <a href="https://plus.google.com/share?url=https://lavanyaks.pythonanywhere.com" target="_blank" class="share-link">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-        </a>
+    <div class="pagination">
+        <a href="/"><i class="fa fa-th-large" aria-hidden="true"></i>All articles</a>
     </div>
-</div>
-<div class="pagination">
-    <a href="/"><i class="fa fa-th-large" aria-hidden="true"></i>All articles</a>
 </div>
 {% endblock %}
 

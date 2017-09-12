@@ -12,7 +12,13 @@
 <body>
     <header>
         <h2 class="logo"><a href="/">Lava</a></h2>
-        <nav>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <nav class="nav">
+            <div class="mobile-menu-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
             <ul class="social-media">
                 <li><a href="//www.twitter.com/lavanyaksingh" class="twitter-icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="//www.instagram.com/lavanyaks" class="instagram-icon" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -47,5 +53,7 @@
         </div>
 
     </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

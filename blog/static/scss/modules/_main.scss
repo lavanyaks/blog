@@ -12,13 +12,20 @@ html {
 body {
     background-color: $main-background;
     margin: 0 auto;
-    padding: 40px;
     max-width: 960px;
     width: 100%;
 }
 
 header, main, footer {
     display: inline-block;
+}
+
+header, main {
+    padding: 40px 40px 0;
+}
+
+footer {
+    padding: 40px;
 }
 
 main {
@@ -61,4 +68,10 @@ button:hover {
 
 button:focus, button:active, input:focus {
     // outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
 }

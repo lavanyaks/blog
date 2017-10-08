@@ -17,6 +17,9 @@ def montreal(request):
 def toronto(request):
     return render(request, 'blog/toronto.html')
 
+def about(request):
+    return render(request, 'blog/about.html')
+
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
 

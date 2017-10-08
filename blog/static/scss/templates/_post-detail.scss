@@ -1,34 +1,36 @@
-.post-detail {
-    .post {
-        max-width: 680px;
-        margin: 0 auto;
-        h1 {
-            font-weight: 400;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-size: 25px;
-        }
+// General layout for any type of post/text
+.post {
+    max-width: 680px;
+    margin: 0 auto;
+    h1 {
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 
-        p {
-            margin: 40px 0;
-        }
+    p {
+        margin: 40px 0;
+    }
 
-        .post-info {
-            text-align: center;
-        }
+    .post-info {
+        text-align: center;
+    }
 
-        .date {
-            font-style: italic;
-            margin-bottom: 50px;
-        }
+    .date {
+        font-style: italic;
+        margin-bottom: 50px;
+    }
 
-        .social-share {
-            margin-bottom: 50px;
-            a {
-                margin: 0 5px;
-            }
+    .social-share {
+        margin-bottom: 50px;
+        a {
+            margin: 0 5px;
         }
     }
+}
+
+.post-detail {
     .pagination {
         border-top: 1px solid $border;
         padding: 20px 0;
